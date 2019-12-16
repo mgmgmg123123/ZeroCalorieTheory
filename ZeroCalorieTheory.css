@@ -1,0 +1,32 @@
+@charset "utf-8";
+h1
+{
+  margin: 0 auto; 
+}
+
+body
+{
+  height: 100%;
+  width: 100%;
+  margin: 10% auto;
+  padding: 0px;
+  background-image: url(img/ramen.jpg);
+  background-size : cover;
+}
+
+.content
+{
+  text-align: center;
+  margin: 0 auto; 
+  width: 80%;
+  overflow: hidden;
+
+  background-color: aliceblue;
+  opacity: 0.7;
+}
+
+table
+{
+  margin: 0 auto; 
+  text-align: center;
+}

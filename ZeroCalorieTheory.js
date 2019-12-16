@@ -1,8 +1,8 @@
 var TheoryList = 
     [
-        ['今日食べたものは揚げ物ですか？','高温で揚げるとカロリーが空中に逃げるのでカロリーゼロです。'],
-        ['今日食べたものに野菜が含まれていますか？','野菜は食べても太らないのでカロリーゼロです。'],
-        ['今日食べたものは冷たいですか？','冷たいものはゼロカロリーです。']
+        ['今日食べたものは揚げ物ですか？','高温で揚げるとカロリーが空中に逃げます。'],
+        ['今日食べたものに野菜が含まれていますか？','野菜は食べても太りません。'],
+        ['今日食べたものは冷たいですか？','冷たいものはそもそもゼロカロリーです。']
     ];
 
 window.onload = function()
@@ -16,6 +16,8 @@ function yes()
         var No = getQuestionNo();
         var answer = document.getElementById("answer");
         answer.innerHTML = TheoryList[No -1][1];
+        var isCalory = document.getElementById("isCalory");
+        isCalory.innerText = "カロリーゼロです！！！"
     }
 
 function no()
